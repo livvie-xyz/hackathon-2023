@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
     <title>Recipe Generator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.default.min.css">
+    <style>
+        /* Add a style for the header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Add style for navigation links */
+        nav a {
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Add a style to create a line between recipe boxes */
+        .recipe-box {
+            border-bottom: 1px solid #ccc; /* Add a border to create a line */
+            margin-bottom: 10px; /* Add some margin for spacing */
+            padding-bottom: 10px; /* Add padding for spacing */
+        }
+    </style>
 </head>
 <body>
+    <!-- Header section -->
+    <header>
+        <div id="flave-lab">Flave-Lab</div>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+        </nav>
+    </header>
+    
     <div id="app">
         <h1>Recipe Generator</h1>
         <label for="ingredients">Ingredients:</label>
